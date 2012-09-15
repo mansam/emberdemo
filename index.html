@@ -14,14 +14,14 @@
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="index">
-			<h1>Index page</h1>
+			<h2>Index page</h1>
 			<div>
 				<a {{action goAbout}}>About</a>
 			</div>
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="about">
-			<h1>About page</h1>
+			<h2>About page</h1>
 			<div>
 				<a {{action goIndex}}>Index</a>
 			</div>
@@ -30,6 +30,7 @@
 	</head>
 	<body>
 		<script type="text/x-handlebars" data-template-name="application">
+		<h1>Ember Demo Header</h1>
 			{{outlet}}
 		</script>
 	</body>
