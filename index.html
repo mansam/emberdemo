@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/handlebars-1.0.0.beta.6.js"></script>
+		<script type="text/javascript" src="assets/js/ember-1.0.pre.min.js"></script>
+		<script type="text/javascript" src="assets/js/foss.js"></script>
+		<title>FOSS@RIT Ember Demo</title>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				Foss.initialize();
+			});
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="index">
+			<h1>Index page</h1>
+			<div>
+				<a {{action goAbout}}>About</a>
+			</div>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="about">
+			<h1>About page</h1>
+			<div>
+				<a {{action goIndex}}>Index</a>
+			</div>
+		</script>
+
+	</head>
+	<body>
+		<script type="text/x-handlebars" data-template-name="application">
+			{{outlet}}
+		</script>
+	</body>
+</html>
