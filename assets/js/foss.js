@@ -1,26 +1,26 @@
-Foss = Ember.Application.create({
+App = Ember.Application.create({
 	version: "0.0.1"
 });
 
-Foss.ApplicationController = Ember.Controller.extend();
-Foss.IndexController = Ember.Controller.extend();
-Foss.AboutController = Ember.Controller.extend();
-Foss.DetailsController = Ember.Controller.extend();
+App.ApplicationController = Ember.Controller.extend();
+App.IndexController = Ember.Controller.extend();
+App.AboutController = Ember.Controller.extend();
+App.DetailsController = Ember.Controller.extend();
 
-Foss.ApplicationView = Ember.View.extend({
+App.ApplicationView = Ember.View.extend({
 	templateName: 'application'
 });
-Foss.IndexView = Ember.View.extend({
+App.IndexView = Ember.View.extend({
 	templateName: 'index'
 });
-Foss.AboutView = Ember.View.extend({
+App.AboutView = Ember.View.extend({
 	templateName: 'about'
 });
-Foss.DetailsView = Ember.View.extend({
+App.DetailsView = Ember.View.extend({
 	templateName: 'details'
 });
 
-Foss.Router = Ember.Router.extend({
+App.Router = Ember.Router.extend({
 	root: Ember.Route.extend({
 		index: Ember.Route.extend({
 			route: '/',
