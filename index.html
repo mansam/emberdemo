@@ -5,7 +5,7 @@
 		<script type="text/javascript" src="assets/js/handlebars-1.0.0.beta.6.js"></script>
 		<script type="text/javascript" src="assets/js/ember-1.0.pre.min.js"></script>
 		<script type="text/javascript" src="assets/js/app.js"></script>
-		<title>FOSS@RIT Ember Demo</title>
+		<title>Ember.js Routing Demonstration</title>
 
 		<script type="text/javascript">
 			$(document).ready(function () {
@@ -14,16 +14,16 @@
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="index">
-			<h2>Index page</h2>
+			<h2>Index View</h2>
 			<div>
-				<a {{action goAbout}}>About</a>
+				<a href='#' {{action goAbout}}>About</a>
 			</div>
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="about">
-			<h2>About page</h2>
+			<h2>About View</h2>
 			<div>
-				<a {{action goIndex}}>Index</a>
+				<a href='#' {{action goIndex}}>Index</a>
 			</div>
 			<div>
 				{{outlet sub}}
@@ -31,13 +31,13 @@
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="details">
-		<p>Some details about me.</p>
+		<p>Some details about the page.</p>
 		</script>
 
 	</head>
 	<body>
 		<script type="text/x-handlebars" data-template-name="application">
-		<h1>Ember Demo Header</h1>
+		<h1>Ember Application View</h1>
 			{{outlet top}}
 		</script>
 	</body>

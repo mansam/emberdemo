@@ -35,7 +35,7 @@ App.Router = Ember.Router.extend({
 			route: '/about',
 			connectOutlets: function (router, context) {
 				router.get('applicationController').connectOutlet('top', 'about');
-				router.get('aboutController').connectOutlet('sub', 'details')
+				router.get('aboutController').connectOutlet('sub', 'details');
 			},
 			goIndex: function (router, context) {
 				router.transitionTo('index');
